@@ -18,7 +18,6 @@ app.get("/", async function (req, res) {
       password: process.env.PASSWORD,
       connectionString: process.env.CONNECTIONSTRING,
     });
-    console.log("ehruaer")
     try {
       const sql = `SELECT * FROM ACTIVEUSER`;
       const result = await connection.execute(sql);
